@@ -25,7 +25,7 @@ import androidx.annotation.Nullable;
 public enum FilesAppType {
 
     @SuppressWarnings("SpellCheckingInspection")
-    COMMUNIS("de.erzbistumkoeln.communis.client", "communis");
+    COMMUNIS("de.erzbistumkoeln.communis.client", "de.erzbistum-koeln");
 
     public final String packageId;
     public final String accountType;
