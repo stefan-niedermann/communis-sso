@@ -24,9 +24,8 @@ import androidx.annotation.Nullable;
 
 public enum FilesAppType {
 
-    PROD("com.nextcloud.client", "nextcloud"),
-    QA("com.nextcloud.android.qa", "nextcloud.qa"),
-    DEV("com.nextcloud.android.beta", "nextcloud.beta");
+    @SuppressWarnings("SpellCheckingInspection")
+    COMMUNIS("de.katholisch.communis", "communis");
 
     public final String packageId;
     public final String accountType;
@@ -37,8 +36,8 @@ public enum FilesAppType {
     }
 
     /**
-     * @return {@link #PROD}, {@link #QA} or {@link #DEV} depending on {@param accountType}.
-     * Uses {@link #PROD} as fallback.
+     * @return {@link #COMMUNIS} depending on {@param accountType}.
+     * Uses {@link #COMMUNIS} as fallback.
      */
     @NonNull
     public static FilesAppType findByAccountType(@Nullable String accountType) {
@@ -47,6 +46,6 @@ public enum FilesAppType {
                 return appType;
             }
         }
-        return PROD;
+        return COMMUNIS;
     }
 }
