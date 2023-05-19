@@ -6,6 +6,9 @@
 
     <queries>
         <package android:name="de.erzbistumkoeln.communis.client" />
+        <package android:name="com.nextcloud.client" />
+        <package android:name="com.nextcloud.android.qa" />
+        <package android:name="com.nextcloud.android.beta" />
     </queries>
 
 </manifest>
