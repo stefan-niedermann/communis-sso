@@ -5,9 +5,7 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
 
     <queries>
-        <package android:name="com.nextcloud.client" />
-        <package android:name="com.nextcloud.android.qa" />
-        <package android:name="com.nextcloud.android.beta" />
+        <package android:name="de.erzbistumkoeln.communis.client" />
     </queries>
 
 </manifest>
